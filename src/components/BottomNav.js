@@ -1,9 +1,10 @@
 const TABS = [
-  { id: 'today',    icon: '🏠', labelKey: 'nav.today' },
-  { id: 'tasks',    icon: '📋', labelKey: 'nav.tasks' },
-  { id: 'add',      icon: '+',  labelKey: 'nav.add',  isAdd: true },
-  { id: 'flash',    icon: '💡', labelKey: 'nav.flash' },
-  { id: 'settings', icon: '⚙️', labelKey: 'nav.settings' },
+  { id: 'today',    icon: '🏠', label: '오늘' },
+  { id: 'tasks',    icon: '📋', label: '전체' },
+  { id: 'add',      icon: '+',  label: '',     isAdd: true },
+  { id: 'calendar', icon: '📅', label: '달력' },
+  { id: 'flash',    icon: '💡', label: '메모' },
+  { id: 'settings', icon: '⚙️', label: '설정' },
 ];
 
 export class BottomNav {
@@ -57,11 +58,11 @@ export class BottomNav {
           transform: scale(0.92);
         }
         .bottom-nav__icon {
-          font-size: 22px;
+          font-size: 20px;
           line-height: 1;
         }
         .bottom-nav__label {
-          font-size: 10px;
+          font-size: 9px;
           font-weight: 500;
           letter-spacing: 0.02em;
         }
@@ -87,10 +88,10 @@ export class BottomNav {
         <button
           class="bottom-nav__btn ${tab.isAdd ? 'bottom-nav__btn--add' : ''} ${tab.id === this.activeTab ? 'active' : ''}"
           data-tab="${tab.id}"
-          aria-label="${tab.labelKey}"
+          aria-label="${tab.label || tab.id}"
         >
           <span class="bottom-nav__icon">${tab.icon}</span>
-          ${!tab.isAdd ? `<span class="bottom-nav__label">${tab.id === 'today' ? '오늘' : tab.id === 'tasks' ? '전체' : tab.id === 'flash' ? '메모' : '설정'}</span>` : ''}
+          ${!tab.isAdd ? `<span class="bottom-nav__label">${tab.label}</span>` : ''}
         </button>
       `).join('')}
     `;

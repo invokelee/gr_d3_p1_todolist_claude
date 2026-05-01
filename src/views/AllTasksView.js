@@ -15,7 +15,7 @@ export class AllTasksView {
     this.el.className = 'all-tasks-view';
     this.el.innerHTML = `
       <style>
-        .all-tasks-view { padding: calc(var(--safe-top) + 16px) var(--spacing-md) var(--spacing-md); }
+        .all-tasks-view { padding: 16px var(--spacing-md) var(--spacing-md); }
         .view-heading { font-size: 26px; font-weight: 700; margin-bottom: 16px; }
         .task-list { display: flex; flex-direction: column; gap: 8px; }
         .segment-wrap { margin-bottom: 14px; }

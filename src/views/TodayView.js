@@ -20,7 +20,7 @@ export class TodayView {
     this.el.className = 'today-view';
     this.el.innerHTML = `
       <style>
-        .today-view { padding: calc(var(--safe-top) + 16px) var(--spacing-md) var(--spacing-md); }
+        .today-view { padding: 16px var(--spacing-md) var(--spacing-md); }
         .today-header { margin-bottom: 16px; }
         .today-date { font-size: 13px; color: var(--color-text2); margin-bottom: 2px; }
         .today-heading { font-size: 26px; font-weight: 700; }

@@ -21,7 +21,7 @@ export class FlashView {
     this.el.className = 'flash-view';
     this.el.innerHTML = `
       <style>
-        .flash-view { padding: calc(var(--safe-top) + 16px) var(--spacing-md) var(--spacing-md); display: flex; flex-direction: column; height: 100%; }
+        .flash-view { padding: 16px var(--spacing-md) var(--spacing-md); display: flex; flex-direction: column; height: 100%; }
         .flash-heading { font-size: 26px; font-weight: 700; margin-bottom: 16px; }
         .flash-input-area {
           background: var(--color-surface);
