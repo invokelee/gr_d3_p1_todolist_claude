@@ -193,7 +193,6 @@ export class CalendarView {
     document.addEventListener('tasks:refresh', this._refreshHandler);
     return this.el;
   }
-  }
 
   async onActivate() {
     await this._loadAndRender();
