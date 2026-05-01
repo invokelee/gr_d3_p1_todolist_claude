@@ -11,7 +11,8 @@ export function detectLocale() {
 export async function setLocale(locale) {
   _locale = locale;
   try {
-    const res = await fetch(`/src/i18n/${locale}.json`);
+    const base = new URL('.', import.meta.url).href;
+    const res = await fetch(`${base}${locale}.json`);
     _strings = await res.json();
   } catch {
     _strings = {};

@@ -46,7 +46,7 @@ class App {
     this._navigate('today');
 
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw/service-worker.js').catch(() => {});
+      navigator.serviceWorker.register('./sw/service-worker.js').catch(() => {});
     }
   }
 
