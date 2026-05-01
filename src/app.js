@@ -30,7 +30,7 @@ class App {
       console.warn('IndexedDB init failed, running in memory mode:', e);
     }
 
-    setLocale(detectLocale());
+    await setLocale(detectLocale());
 
     this.bottomNav = new BottomNav();
     const navEl = this.bottomNav.render();
