@@ -1,0 +1,26 @@
+{
+  "name": "Flowo",
+  "short_name": "Flowo",
+  "description": "빠른 할 일 관리 — 2초 입력, 스마트 알림",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#09090e",
+  "theme_color": "#09090e",
+  "lang": "ko",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/public/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/public/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

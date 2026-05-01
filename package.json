@@ -1,0 +1,13 @@
+{
+  "name": "flowo",
+  "version": "0.1.0",
+  "description": "빠른 할 일 관리 PWA",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -p 3000 --no-clipboard",
+    "start": "npx serve . -p 3000 --no-clipboard"
+  },
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}
